@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+.navbar {
+    background-color: #06708A !important;
+}
+.btn-primary {
+    background-color: #6a1b9a !important;
+}
+body, html {
+    font-family: "Signika",sans-serif;
+    color: #787878;
+}
+.form-switch .form-check-input:checked {
+    background-color: rgb(206, 244, 253)
+}
+.form-check-input:checked {
+    background-color: #06708A;
+    border-color: #06708A;
+}
+table > thead{
+    background-color: #06708A;
+    color: #fff;
+}
