@@ -16,7 +16,7 @@ import { AfiliadoPreviewComponent } from './components/afiliado-preview/afiliado
     AfiliadoFormComponent,
     AfiliadoListComponent,
     AfiliadoPreviewComponent,
-    NavigationComponent 
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
