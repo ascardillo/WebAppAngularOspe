@@ -1,20 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AfiliadoFormComponent } from './components/afiliado-form/afiliado-form.component';
-import { AfiliadoListComponent } from './components/afiliado-list/afiliado-list.component';
 
 const routes: Routes = [
   {
-    path:'usuario/new',
-    component: AfiliadoFormComponent    
-  },
-  {
-    path:'usuarios',
-    component: AfiliadoListComponent    
+    path:'usuario',
+    loadChildren: () => import('./administracion-usuarios/administracion-usuarios.module').then(m => m.AdministracionUsuariosModule)
   },
   {
     path:'',
-    redirectTo:'/usuario/new',
+    redirectTo:'usuario',
     pathMatch:'full'
   }
 ];
